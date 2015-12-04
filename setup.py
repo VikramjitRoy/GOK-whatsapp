@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 from __future__ import print_function
 from setuptools import setup, find_packages
-import yowsup
+
 import platform
 
-deps = ['python-dateutil', 'argparse', 'python-axolotl>=0.1.7', 'pillow','pymongo','yowsup2']
+deps = ['rivescript','python-dateutil', 'argparse', 'python-axolotl>=0.1.7', 'pillow','pymongo','yowsup2']
 
 if platform.system().lower() == "windows":
     deps.append('pyreadline')
@@ -16,15 +16,16 @@ else:
 
 setup(
     name='yowsup2',
-    version=yowsup.__version__,
+    #version=yowsup.__version__,
     url='http://github.com/tgalal/yowsup/',
     license='GPL-3+',
     author='Tarek Galal',
     tests_require=[],
     install_requires = deps,
-    scripts = ['yowsup-cli'],
+    #scripts = ['yowsup-cli'],
     #cmdclass={'test': PyTest},
     author_email='tare2.galal@gmail.com',
+    
     description='A WhatsApp python library',
     #long_description=long_description,
     packages= find_packages(),
@@ -43,4 +44,5 @@ setup(
         ],
     #extras_require={
     #    'testing': ['pytest'],
-   
+    #)  
+)
