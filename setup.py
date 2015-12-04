@@ -15,9 +15,9 @@ else:
         deps.append('readline')
 
 setup(
-    name='yowsup2',
+    name='GOK-whatsapp',
     #version=yowsup.__version__,
-    url='http://github.com/tgalal/yowsup/',
+    url='https://github.com/VikramjitRoy/GOK-whatsapp/',
     license='GPL-3+',
     author='Tarek Galal',
     tests_require=[],
